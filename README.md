@@ -1,8 +1,10 @@
-# AI Design Skills
+# AI Design Skills · TheBear
 
 A growing collection of design skills for AI coding tools — Claude Code, Cursor, Codex, Windsurf, and anything else that reads a markdown rules file.
 
 Each skill is a self-contained folder. Install the ones you need.
+
+Maintained by [더베어앤컴퍼니 (TheBear & Company)](https://github.com/drivethatbear-beep). Forked from [elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills) and developed independently here.
 
 ---
 
@@ -25,8 +27,8 @@ Pick a skill from the table above, then swap `<skill-name>` below for its folder
 
 ```bash
 mkdir -p .claude/skills
-git clone https://github.com/elayadesign/ai-design-skills.git /tmp/ai-design-skills
-cp -r /tmp/ai-design-skills/skills/<skill-name> .claude/skills/
+git clone https://github.com/drivethatbear-beep/ai-design-skills-thebear.git /tmp/ai-design-skills-thebear
+cp -r /tmp/ai-design-skills-thebear/skills/<skill-name> .claude/skills/
 ```
 
 Then just ask, in plain language, for what that skill covers.
@@ -38,7 +40,7 @@ Then just ask, in plain language, for what that skill covers.
 ```bash
 mkdir -p .cursor/rules
 curl -o .cursor/rules/<skill-name>.md \
-  https://raw.githubusercontent.com/elayadesign/ai-design-skills/main/skills/<skill-name>/SKILL.md
+  https://raw.githubusercontent.com/drivethatbear-beep/ai-design-skills-thebear/main/skills/<skill-name>/SKILL.md
 ```
 
 Or paste the file into **Settings → Rules for AI**.
@@ -73,10 +75,12 @@ Every skill's design values (fonts, colors, spacing, motion) live in one section
 
 ## Credits
 
+This repository started as a fork of [elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills) by Elaya, MIT licensed.
+
 `landing-page-design` adapts content realism and motion ideas from [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) by Leon Lin, MIT licensed. Details are at the end of [its SKILL.md](./skills/landing-page-design/SKILL.md#credits).
 
 ---
 
 ## License
 
-MIT. Use it, fork it, ship it, sell what you build with it. No attribution needed.
+MIT. Use it, fork it, ship it, sell what you build with it. Keep the [LICENSE](./LICENSE) notice when you redistribute the skill files themselves.
