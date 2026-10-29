@@ -12,7 +12,7 @@ Maintained by [더베어앤컴퍼니 (TheBear & Company)](https://github.com/dri
 
 | Skill | What it does |
 |---|---|
-| [`landing-page-design`](./skills/landing-page-design/SKILL.md) | Builds a landing page from scratch — intake questions, page structure, conversion copy, plus a full visual system (type, spacing, radius, motion). Korean locale rules, seven design system themes, and a rule checker included |
+| [`landing-page-design`](./skills/landing-page-design/SKILL.md) | Builds a landing page from scratch — intake questions, page structure, conversion copy, plus a full visual system (type, spacing, radius, motion). Korean locale rules, twelve design system themes, and a rule checker included |
 
 ### What this fork adds
 

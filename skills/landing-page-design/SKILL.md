@@ -1,6 +1,6 @@
 ---
 name: landing-page-design
-description: "Complete system for building high converting landing pages and marketing sites: intake questions, page structure, layout selection, conversion copywriting, SEO, plus strict visual rules for typography, spacing, corner radius, backgrounds, hero layout, icons, and motion. Includes Korean locale rules (Pretendard, line breaking, 한국어 카피, Korean legal footer and consent) and selectable design system themes (TBNC, shadcn/ui, Park UI, Toss TDS, Wanted Montage, Material 3, Apple HIG). Use when building, editing, styling, reviewing, or writing copy for a landing page, marketing site, product launch page, waitlist page, or one of its sections — 랜딩페이지, 홍보 페이지, 마케팅 사이트, 상세 소개 페이지 제작·리뉴얼·카피. Not for dashboards, admin UI, or app screens unless the user asks for this skill."
+description: "Complete system for building high converting landing pages and marketing sites: intake questions, page structure, layout selection, conversion copywriting, SEO, plus strict visual rules for typography, spacing, corner radius, backgrounds, hero layout, icons, and motion. Includes Korean locale rules (Pretendard, line breaking, 한국어 카피, Korean legal footer and consent) and selectable design system themes (TBNC, shadcn/ui, Park UI, Toss TDS, Wanted Montage, Material 3, Apple HIG, pen.dev Halo, Lunaris, Nitro, shadcn, HeroUI). Use when building, editing, styling, reviewing, or writing copy for a landing page, marketing site, product launch page, waitlist page, or one of its sections — 랜딩페이지, 홍보 페이지, 마케팅 사이트, 상세 소개 페이지 제작·리뉴얼·카피. Not for dashboards, admin UI, or app screens unless the user asks for this skill."
 ---
 
 # Landing Page Design
@@ -31,6 +31,7 @@ Resolve these two before Part B, and say which ones apply in one line.
 | Wanted Montage | [themes/wanted.md](themes/wanted.md) | On request |
 | Material 3 | [themes/material3.md](themes/material3.md) | On request, or an Android adjacent product |
 | Apple HIG | [themes/apple-hig.md](themes/apple-hig.md) | On request, or an Apple platform product page |
+| pen.dev kits: Halo, Lunaris, Nitro, shadcn, HeroUI | [themes/pen-dev.md](themes/pen-dev.md) | The user names a kit, or the design is on the pen.dev canvas |
 
 No theme named means no theme: use Part B as written. Never borrow another company's look for an unrelated brand, and never reproduce its logo or wordmark.
 
