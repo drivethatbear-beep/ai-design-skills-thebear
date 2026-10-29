@@ -1,6 +1,6 @@
 ---
 name: landing-page-design
-description: "Complete system for building high converting landing pages: intake questions, page structure, layout selection, conversion copywriting, SEO, plus strict visual rules for typography, spacing, corner radius, backgrounds, hero layout, icons, and motion. Use this skill whenever building, editing, styling, reviewing, or writing copy for ANY landing page, marketing site, web UI, page section, component, or prototype, even when the user does not mention design, conversion, tokens, or a design system. Always consult it before choosing page sections, headlines, CTAs, fonts, font sizes, spacing values, border radii, background colors, icons, or transitions."
+description: "Complete system for building high converting landing pages and marketing sites: intake questions, page structure, layout selection, conversion copywriting, SEO, plus strict visual rules for typography, spacing, corner radius, backgrounds, hero layout, icons, and motion. Includes Korean locale rules (Pretendard, line breaking, 한국어 카피, Korean legal footer and consent) and selectable design system themes (TBNC, shadcn/ui, Park UI, Toss TDS, Wanted Montage, Material 3, Apple HIG). Use when building, editing, styling, reviewing, or writing copy for a landing page, marketing site, product launch page, waitlist page, or one of its sections — 랜딩페이지, 홍보 페이지, 마케팅 사이트, 상세 소개 페이지 제작·리뉴얼·카피. Not for dashboards, admin UI, or app screens unless the user asks for this skill."
 ---
 
 # Landing Page Design
@@ -13,7 +13,36 @@ This skill has two halves. **Part A** decides what the page says and how it is s
 
 ## Scope
 
-Apply to all web UI work: landing pages, marketing sites, components, dashboards, prototypes, and design reviews. When a rule here conflicts with a framework default, this file wins. When the user's explicit prompt conflicts with a rule, the user wins.
+Apply to landing pages, marketing sites, and their sections, components, prototypes, and design reviews. When a rule here conflicts with a framework default, this file wins. When the user's explicit prompt conflicts with a rule, the user wins.
+
+### Locale and theme
+
+Resolve these two before Part B, and say which ones apply in one line.
+
+1. **Locale.** If the page copy is Korean (`lang="ko"`, or the user asks for a Korean page), also read [references/korean.md](references/korean.md). It overrides fonts, line breaking, line height, copy rules, and ship requirements, and leaves everything else here in force.
+2. **Theme.** If the user names a design system, or the project already uses one, read only that file in [themes/](themes/). A theme replaces the concrete values in Part B (fonts, colors, radius, elevation, motion, icons) with the system's own official values. Part A and the structural rules of Part B (one primary CTA, tagline reveal, states, ship requirements) still apply.
+
+| Theme | File | Apply when |
+|---|---|---|
+| TBNC / 더베어앤컴퍼니 | [themes/tbnc.md](themes/tbnc.md) | The page is for TBNC itself. Never for a client page |
+| shadcn/ui | [themes/shadcn.md](themes/shadcn.md) | The project uses shadcn/ui or the user asks for it |
+| Park UI | [themes/park-ui.md](themes/park-ui.md) | Panda CSS / Ark UI projects, or on request |
+| Toss TDS | [themes/toss.md](themes/toss.md) | On request, or an 앱인토스 mini app |
+| Wanted Montage | [themes/wanted.md](themes/wanted.md) | On request |
+| Material 3 | [themes/material3.md](themes/material3.md) | On request, or an Android adjacent product |
+| Apple HIG | [themes/apple-hig.md](themes/apple-hig.md) | On request, or an Apple platform product page |
+
+No theme named means no theme: use Part B as written. Never borrow another company's look for an unrelated brand, and never reproduce its logo or wordmark.
+
+**Precedence:** user prompt → theme → locale → this file.
+
+**Verify** with the bundled checker before handing over a page:
+
+```bash
+python scripts/lint_page.py <files> [--lang ko] [--theme tbnc --tokens <tokens.json>]
+```
+
+A clean run is necessary, not sufficient. Still render the page and look at it.
 
 **Companion skill.** For upgrading an *existing* site rather than building a new one, use `redesign-existing-projects` ([github.com/elayadesign/redesign-skill](https://github.com/elayadesign/redesign-skill)). It diagnoses generic patterns and defers to this file for every concrete value.
 
@@ -154,6 +183,8 @@ Every visual value must resolve through these rules instead of being invented ad
 **Use:** Geist, Manrope, Geist Mono, Poppins.
 
 **Never use:** Inter, Roboto, Arial, Open Sans, Helvetica.
+
+**Korean pages:** Pretendard, per [references/korean.md](references/korean.md). Never Noto Sans KR, Nanum Gothic, or Malgun Gothic as the primary face.
 
 **Never use italic fonts** anywhere in the interface.
 
@@ -395,6 +426,11 @@ Then build section by section per A6.
 - [ ] Hover, active, focus, loading, empty, and error states all present
 - [ ] No dead links, current nav item indicated
 - [ ] 404, legal links, form validation, favicon, meta tags, alt text
+
+**Locale, theme, and verification**
+- [ ] Locale and theme stated; Korean pages follow references/korean.md
+- [ ] Theme values come from the theme file, not from memory
+- [ ] `scripts/lint_page.py` passes with no errors, and the rendered page was checked by eye at 360px and 1280px
 
 ---
 

@@ -1,0 +1,68 @@
+{
+  "_comment": "Test fixture only. Not a source of truth for TBNC tokens.",
+  "core_palette": {
+    "MIDNIGHT_INDIGO": {
+      "hex": "#060daa",
+      "role": "status, sequence numbers, cover planes",
+      "forbidden": [
+        "heading text",
+        "body text",
+        "filled button"
+      ]
+    },
+    "CARBON_BLACK": {
+      "hex": "#191817",
+      "role": "body text, CTA fill",
+      "forbidden": []
+    },
+    "CARBON_750": {
+      "hex": "#52504d",
+      "role": "headings, wordmark TB and C",
+      "forbidden": []
+    },
+    "ASH_GRAY": {
+      "hex": "#555555",
+      "role": "secondary text",
+      "forbidden": []
+    },
+    "BARELY_WHITE": {
+      "hex": "#fcfaee",
+      "role": "alternating planes, text on dark planes",
+      "forbidden": []
+    },
+    "PURE_WHITE": {
+      "hex": "#ffffff",
+      "role": "base",
+      "forbidden": []
+    },
+    "PALE_SILVER": {
+      "hex": "#e5e5e5",
+      "role": "1px rules and borders",
+      "forbidden": []
+    }
+  },
+  "restricted": {
+    "DEEP_NAVY": {
+      "hex": "#0a1050",
+      "role": "business card background only",
+      "allowed_contexts": [
+        "business-card"
+      ]
+    }
+  },
+  "exceptions": {
+    "HIGHLIGHTER_YELLOW": {
+      "hex": "#ffe24a",
+      "role": "key-phrase highlight in ad creative and card news",
+      "allowed_contexts": [
+        "ad-creative",
+        "cardnews"
+      ],
+      "decided": "2026-08-28",
+      "note": "Outside the core palette by explicit user decision. Bottom-50% linear-gradient with box-decoration-break: clone, used instead of an underline."
+    }
+  },
+  "forbidden_hex": {
+    "#1e3a6e": "retired placeholder indigo, superseded 2026-08-28 by MIDNIGHT_INDIGO"
+  }
+}
