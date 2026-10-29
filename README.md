@@ -31,6 +31,7 @@ Maintained by [더베어앤컴퍼니 (TheBear & Company)](https://github.com/dri
 | [Wanted Montage](./skills/landing-page-design/themes/wanted.md) | On request |
 | [Material 3](./skills/landing-page-design/themes/material3.md) | Android adjacent products, or on request |
 | [Apple HIG](./skills/landing-page-design/themes/apple-hig.md) | Apple platform product pages, or on request |
+| [pen.dev kits](./skills/landing-page-design/themes/pen-dev.md) — Halo, Lunaris, Nitro, shadcn, HeroUI, plus the style archetype index | Designs made on the pen.dev canvas |
 
 Themes describe each system's public tokens for building compatible UI. They never license a company's logo, brand fonts outside their terms, or a look that impersonates that company.
 
